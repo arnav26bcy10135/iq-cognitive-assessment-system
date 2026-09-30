@@ -8,9 +8,9 @@ IQ & Cognitive Assessment System
 
 Many simple quiz applications provide questions and scores but do not provide structured performance tracking or attempt history.
 
-The IQ & Cognitive Assessment System is designed as a command-line Python application that provides a short educational cognitive quiz. It allows users to answer randomized multiple-choice questions, receive a score and performance classification, and review previous attempts stored in a database.
+The IQ & Cognitive Assessment System is designed as a command-line Python application that provides a short educational cognitive quiz. It allows participants to answer randomized multiple-choice questions, receive a score and performance classification, and review previous attempts stored in a database.
 
-The application is intended for educational and programming purposes and is not a professionally validated IQ assessment.
+The application is intended for educational and programming purposes and is not a professionally or clinically validated IQ assessment.
 
 ## Objectives
 
@@ -26,53 +26,77 @@ The main objectives of the project are:
 8. To validate user input and handle invalid entries.
 9. To demonstrate software testing using Python's unittest framework.
 
+## Target Users
+
+The system is intended for:
+
+- Students learning Python programming.
+- Users interested in taking a short educational reasoning quiz.
+- Demonstrators or instructors evaluating a Python project.
+- Users who want to review their previous quiz performance.
+
 ## Functional Requirements
 
 ### FR1 - Start Test
+
 The system shall allow a participant to start a new cognitive test.
 
 ### FR2 - Question Selection
+
 The system shall randomly select ten questions from the available question bank.
 
 ### FR3 - Answer Questions
+
 The system shall display multiple-choice questions and accept answers from the participant.
 
 ### FR4 - Score Calculation
+
 The system shall calculate the participant's score and percentage after completing the test.
 
 ### FR5 - Performance Classification
+
 The system shall assign a performance band based on the participant's percentage.
 
 ### FR6 - Store Results
+
 The system shall save completed test attempts in an SQLite database.
 
 ### FR7 - View History
+
 The system shall allow users to view previously stored test attempts.
 
 ### FR8 - View Statistics
+
 The system shall display basic statistics such as total attempts, highest percentage and average percentage.
 
 ### FR9 - Input Validation
+
 The system shall validate participant names and question answers.
 
 ## Non-Functional Requirements
 
 ### NFR1 - Usability
+
 The application should provide a simple command-line interface that is easy to understand.
 
 ### NFR2 - Reliability
+
 The application should handle invalid inputs without terminating unexpectedly.
 
 ### NFR3 - Maintainability
+
 The application should be divided into separate modules so that individual components can be modified independently.
 
 ### NFR4 - Performance
+
 The application should process questions, scoring and database operations quickly for normal usage.
 
 ### NFR5 - Data Persistence
+
 Completed test attempts should remain available after the application is closed.
 
 ### NFR6 - Testability
+
 Important application logic should be testable using automated unit tests.
 
 ## Scope
